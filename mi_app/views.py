@@ -9,7 +9,7 @@ def process_xml(request):
         try:
             xml_content = request.body
             
-            # Intenta analizar el contenido XML
+           
             root = ET.fromstring(xml_content.decode("utf-8"))
 
             # Definición del espacio de nombres
