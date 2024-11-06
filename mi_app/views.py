@@ -42,7 +42,7 @@ def process_xml(request):
 
             nitEmisor = root.find('.//cac:SenderParty//cbc:CompanyID', namespace)
             nitDeudor = root.find('.//cac:ReceiverParty//cbc:CompanyID', namespace)
-            nombreProveedor = root.find('.//cac:ReceiverParty//cbc:RegistrationName', namespace)
+            nombreProveedor = root.find('.//cac:SenderParty//cbc:RegistrationName', namespace)
             fechaDocumento = root.find('.//cbc:IssueDate', namespace)
             numeroFactura = root.find('.//cbc:ParentDocumentID', namespace)
 
